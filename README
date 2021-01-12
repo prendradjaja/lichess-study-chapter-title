@@ -1,10 +1,11 @@
 Requirements:
 
-  - No dependencies
+  - No Python dependencies
+  - Small external dependency on pbcopy. Remove the pipe to tee (and pbcopy)
+    in main.sh if you don't have this. All it does is copy stdout to the
+    clipboard.
   - Create a secrets.py file containing your lichess username(s) as an array
     called MY_USERNAMES
-  - Small dependency on pbcopy. Remove the tee (and pbcopy) in main.sh if you
-    don't have this. All it does is copy stdout to the clipboard.
 
 Usage:
 
